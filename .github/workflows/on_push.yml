@@ -6,7 +6,7 @@ jobs:
     steps: 
       - run: pip install nbconvert
       - uses: actions/checkout@v2
-      - run: sudo apt-get install pandoc
+      - run: sudo apt-get install pandoc incscape
       - run: python -m nbconvert  lab_01\pint_and_boiling_point.ipynb
 
 
