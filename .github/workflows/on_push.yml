@@ -4,7 +4,7 @@ jobs:
   test: 
     runs-on: ubuntu-latest
     steps: 
-      - run: pip install nbconvert
+      - run: pip install nbconvert ipykernel
       - uses: actions/checkout@v2
       - run: sudo apt-get install pandoc inkscape texlive-xetex
       - run: python -m nbconvert --to pdf --execute lab_01/pint_and_boiling_point.ipynb
