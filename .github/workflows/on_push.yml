@@ -9,8 +9,8 @@ jobs:
       - run: sudo apt-get install pandoc inkscape texlive-xetex
       - run: python -m nbconvert --to pdf --execute lab_01/pint_and_boiling_point.ipynb
       - uses: actions/upload-artifact@v4
-      - with: 
-        - path: lab_01/lab1
+        with: 
+          path: lab_01/lab1
 
 
 
