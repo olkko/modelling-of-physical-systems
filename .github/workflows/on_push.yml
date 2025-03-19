@@ -10,7 +10,7 @@
         - run: python -m nbconvert --to pdf --execute lab_02/assignment02.ipynb
         - uses: actions/upload-artifact@v4
           with: 
-            path: lab_02/assignment.pdf
+            path: lab_02/assignment02.pdf
 
 
 
