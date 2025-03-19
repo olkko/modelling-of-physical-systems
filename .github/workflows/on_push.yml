@@ -1,4 +1,4 @@
-name: lab01
+name: assignment02
 on: [push]
 jobs:
   test: 
@@ -7,10 +7,10 @@ jobs:
       - run: pip install nbconvert ipykernel pint matplotlib scipy open-atmos-jupyter-utils numpy
       - uses: actions/checkout@v2
       - run: sudo apt-get install pandoc inkscape texlive-xetex
-      - run: python -m nbconvert --to pdf --execute lab_01/pint_and_boiling_point.ipynb
+      - run: python -m nbconvert --to pdf --execute lab_02\assignment02.ipynb
       - uses: actions/upload-artifact@v4
         with: 
-          path: lab_01/pint_and_boiling_point.pdf
+          path: lab_02/assignment.pdf
 
 
 
