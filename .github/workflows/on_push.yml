@@ -6,7 +6,7 @@
       steps: 
         - run: pip install nbconvert ipykernel pint matplotlib scipy open-atmos-jupyter-utils numpy
         - uses: actions/checkout@v2
-        - run: sudo apt-get install pandoc inkscape texlive-xetex
+        - run: sudo apt-get update && sudo apt-get install -y pandoc inkscape texlive-xetex
         - run: python -m nbconvert --to pdf --execute lab_03/advection_upwind_assignment03.ipynb
         - uses: actions/upload-artifact@v4
           with: 
