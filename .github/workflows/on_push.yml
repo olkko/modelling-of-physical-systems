@@ -1,4 +1,4 @@
-  name: assignment02
+  name: assignment03
   on: [push]
   jobs:
     test: 
@@ -7,10 +7,10 @@
         - run: pip install nbconvert ipykernel pint matplotlib scipy open-atmos-jupyter-utils numpy
         - uses: actions/checkout@v2
         - run: sudo apt-get install pandoc inkscape texlive-xetex
-        - run: python -m nbconvert --to pdf --execute lab_02/assignment02.ipynb
+        - run: python -m nbconvert --to pdf --execute lab_03/advection_upwind.ipynb
         - uses: actions/upload-artifact@v4
           with: 
-            path: lab_02/assignment02.pdf
+            path: lab_02/advection_upwind.pdf
 
 
 
