@@ -1,4 +1,4 @@
-  name: assignment05
+  name: assignment06
   on: [push]
   jobs:
     test: 
@@ -7,10 +7,10 @@
         - run: pip install nbconvert ipykernel pint matplotlib scipy open-atmos-jupyter-utils numpy
         - uses: actions/checkout@v2
         - run: sudo apt-get update && sudo apt-get install -y pandoc inkscape texlive-xetex
-        - run: python -m nbconvert --to pdf --execute lab_05/assignment05.ipynb
+        - run: python -m nbconvert --to pdf --execute lab_06/stochasticadv.ipynb
         - uses: actions/upload-artifact@v4
           with: 
-            path: lab_05/assignment05.pdf
+            path: lab_06/assignment06.pdf
 
 
 
