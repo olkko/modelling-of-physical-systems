@@ -7,7 +7,7 @@
         - run: pip install nbconvert ipykernel pint matplotlib scipy open-atmos-jupyter-utils numpy
         - uses: actions/checkout@v2
         - run: sudo apt-get update && sudo apt-get install -y pandoc inkscape texlive-xetex
-        - run: python -m nbconvert --to pdf --execute lab_06/stochasticadv.ipynb
+        - run: python -m nbconvert --to pdf --execute lab_06/assignment06.ipynb
         - uses: actions/upload-artifact@v4
           with: 
             path: lab_06/assignment06.pdf
